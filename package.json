@@ -1,0 +1,16 @@
+{
+  "name": "tmi-cluster",
+  "version": "1.0.0",
+  "description": "Manages multiple TMI.js instances",
+  "keywords": "twitch, tmi.js, load balancing",
+  "main": "main.js",
+  "scripts": {
+    "test": "node --trace-warnings test.js"
+  },
+  "author": "Till Affeldt <affeldt@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "deep-clone": "^3.0.3"
+  }
+}

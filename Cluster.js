@@ -195,7 +195,7 @@ class Cluster {
       const joins = this.joinQueue.splice(0, this.config.cluster.connections);
       for (let i = 0, l = joins.length; i < l; i++) {
         const channel = joins[i];
-        this.clients.execute('join', channel);
+        this.clients[i].execute('join', channel);
       }
     }
     const joinInterval = this.config.options?.joinInterval ?? 2000;

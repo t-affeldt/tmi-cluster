@@ -39,7 +39,7 @@ class Chatwatch extends EventEmitter {
     }
   }
 
-  async updateChannel() {
+  async #updateChannel() {
     if (this.channels.length < 1) { return; }
     let channel = this.channels[this.iterator];
     let data;
@@ -79,7 +79,7 @@ class Chatwatch extends EventEmitter {
   }
 
   async update() {
-    await this.updateChannel();
+    await this.#updateChannel();
     let waittime;
     if (this.channels.length < 1) {
       waittime = this.global_waittime;

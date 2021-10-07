@@ -1,6 +1,6 @@
 {
   "name": "tmi-cluster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manages multiple TMI.js instances",
   "keywords": "twitch, tmi.js, load balancing",
   "main": "main.js",
